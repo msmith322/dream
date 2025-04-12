@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solana Dream Team</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+    <style>
+        /* Custom styles */
+        .basketball-bg {
+            background-image: url('court.png'); /* Placeholder for basketball court bg */
+            background-blend-mode: overlay;
+            background-size: cover;
+        }
+        .player-card {
+            transition: all 0.3s ease;
+        }
+        .player-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+        .solana-gradient {
+            background: linear-gradient(90deg, #9945FF 0%, #14F195 100%);
+        }
+        .solana-text {
+            background: linear-gradient(90deg, #9945FF 0%, #14F195 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-gray-900 bg-opacity-80 backdrop-filter backdrop-blur-lg z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="Solana_logo.png" alt="Solana Logo" class="mr-2 h-8">
+                <span class="text-2xl font-bold solana-text">Solana Dream Team</span>
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#home" class="hover:text-purple-400 transition">Home</a>
+                <a href="#roster" class="hover:text-purple-400 transition">Team Roster</a>
+                <a href="#stats" class="hover:text-purple-400 transition">Team Stats</a>
+                <a href="#about" class="hover:text-purple-400 transition">About</a>
+            </div>
+            <div>
+                <a href="https://pump.fun/coin/ca" class="bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-lg transition">Buy Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative min-h-screen basketball-bg flex items-center">
+        <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+        <div class="container mx-auto px-4 z-10 py-32">
+            <div class="max-w-3xl mx-auto text-center">
+                <h1 class="text-5xl md:text-7xl font-bold mb-6">Solana Dream Team</h1>
+                <p class="text-xl mb-10">CA: tbd</p>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <a href="#roster" class="solana-gradient px-8 py-3 rounded-lg font-semibold text-white hover:opacity-90 transition">Meet The Team</a>
+                    <a href="#about" class="bg-transparent border-2 border-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-gray-900 transition">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Roster Section -->
+    <section id="roster" class="py-20 bg-gray-800">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4">The Starting Lineup</h2>
+                <p class="text-xl text-gray-300 max-w-2xl mx-auto">Our all-star team of figures who made waves in the Solana memecoin world</p>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Player Card 1 - Kanye West -->
+                <div class="player-card bg-gray-700 rounded-xl overflow-hidden">
+                    <div class="relative h-64">
+                        <img src="e.png" alt="Kanye West" class="w-full h-full object-cover">
+                        <div class="absolute top-0 left-0 w-12 h-12 bg-purple-600 flex items-center justify-center text-2xl font-bold">1</div>
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent h-1/3"></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-1">Kanye West</h3>
+                        <p class="text-purple-400 mb-3">Power Forward</p>
+                        <div class="flex items-center text-sm text-gray-300 mb-4">
+                            <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
+                            </svg>
+                            @kanyewest
+                        </div>
+                        <p class="text-gray-300 mb-4">Made a significant impact by dropping a coin and joining the Solana memecoin space, bringing mainstream attention to the ecosystem.</p>
+                        <div class="grid grid-cols-2 gap-2 mb-4">
+                            <div class="bg-gray-600 rounded p-2 text-center">
+                                <div class="text-xs text-gray-300">INFLUENCE</div>
+                                <div class="text-xl font-bold">94</div>
+                            </div>
+                            <div class="bg-gray-600 rounded p-2 text-center">
+                                <div class="text-xs text-gray-300">HYPE</div>
+                                <div class="text-xl font-bold">97</div>
+                            </div>
+                        </div>
+                        <a href="https://x.com/kanyewest" class="block text-center solana-gradient py-2 rounded font-medium hover:opacity-90 transition">View Profile</a>
+                    </div>
+                </div>
+
+                <!-- Player Card 2 - Griffin Biesk "Quant Kid" -->
+                <div class="player-card bg-gray-700 rounded-xl overflow-hidden">
+                    <div class="relative h-64">
+                        <img src="b.png" alt="Griffin Biesk" class="w-full h-full object-cover">
+                        <div class="absolute top-0 left-0 w-12 h-12 bg-purple-600 flex items-center justify-center text-2xl font-bold">2</div>
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent h-1/3"></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-1">Griffin Biesk</h3>
+                        <p class="text-purple-400 mb-3">Point Guard</p>
+                        <div class="flex items-center text-sm text-gray-300 mb-4">
+                            <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
+                            </svg>
+                            @QuantKid
+                        </div>
+                        <p class="text-gray-300 mb-4">Known as "Quant Kid," made history as the first kid to rug pull a Solana meme coin on a live stream, bringing attention to DeFi risks.</p>
+                        <div class="grid grid-cols-2 gap-2 mb-4">
+                            <div class="bg-gray-600 rounded p-2 text-center">
+                                <div class="text-xs text-gray-300">INFAMY</div>
+                                <div class="text-xl font-bold">92</div>
+                            </div>
+                            <div class="bg-gray-600 rounded p-2 text-center">
+                                <div class="text-xs text-gray-300">STRATEGY</div>
+                                <div class="text-xl font-bold">88</div>
+                            </div>
+                        </div>
+                        <a href="https://x.com/TheQuantKid" class="block text-center solana-gradient py-2 rounded font-medium hover:opacity-90 transition">View Profile</a>
+                    </div>
+                </div>
+
+                <!-- Player Card 3 - Melania Trump -->
+                <div class="player-card bg-gray-700 rounded-xl overflow-hidden">
+                    <div class="relative h-64">
+                        <img src="h.png" alt="Melania Trump" class="w-full h-full object-cover">
+                        <div class="absolute top-0 left-0 w-12 h-12 bg-purple-600 flex items-center justify-center text-2xl font-bold">3</div>
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent h-1/3"></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-1">Melania Trump</h3>
+                        <p class="text-purple-400 mb-3">Shooting Guard</p>
+                        <div class="flex items-center text-sm text-gray-300 mb-4">
+                            <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
+                            </svg>
+                            @MELANIATRUMP
+                        </div>
+                        <p class="text-gray-300 mb-4">Created a Solana memecoin that soared to billion-dollar market cap, bringing mainstream attention to Solana from new demographics.</p>
+                        <div class="grid grid-cols-2 gap-2 mb-4">
+                            <div class="bg-gray-600 rounded p-2 text-center">
+                                <div class="text-xs text-gray-300">MARKET CAP</div>
+                                <div class="text-xl font-bold">96</div>
+                            </div>
+                            <div class="bg-gray-600 rounded p-2 text-center">
+                                <div class="text-xs text-gray-300">REACH</div>
+                                <div class="text-xl font-bold">90</div>
+                            </div>
+                        </div>
+                        <a href="https://x.com/MELANIATRUMP" class="block text-center solana-gradient py-2 rounded font-medium hover:opacity-90 transition">View Profile</a>
+                    </div>
+                </div>
+
+                <!-- Player Card 4 - Donald Trump -->
+                <div class="player-card bg-gray-700 rounded-xl overflow-hidden">
+                    <div class="relative h-64">
+                        <img src="d.png" alt="Donald Trump" class="w-full h-full object-cover">
+                        <div class="absolute top-0 left-0 w-12 h-12 bg-purple-600 flex items-center justify-center text-2xl font-bold">4</div>
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent h-1/3"></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-1">Donald Trump</h3>
+                        <p class="text-purple-400 mb-3">Center</p>
+                        <div class="flex items-center text-sm text-gray-300 mb-4">
+                            <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
+                            </svg>
+                            @realDonaldTrump
+                        </div>
+                        <p class="text-gray-300 mb-4">Created a high-profile memecoin that experienced a 90% drop, significantly impacting market sentiment in the Solana ecosystem.</p>
+                        <div class="grid grid-cols-2 gap-2 mb-4">
+                            <div class="bg-gray-600 rounded p-2 text-center">
+                                <div class="text-xs text-gray-300">PUBLICITY</div>
+                                <div class="text-xl font-bold">98</div>
+                            </div>
+                            <div class="bg-gray-600 rounded p-2 text-center">
+                                <div class="text-xs text-gray-300">VOLATILITY</div>
+                                <div class="text-xl font-bold">97</div>
+                            </div>
+                        </div>
+                        <a href="https://x.com/realDonaldTrump" class="block text-center solana-gradient py-2 rounded font-medium hover:opacity-90 transition">View Profile</a>
+                    </div>
+                </div>
+
+                <!-- Player Card 5 - Dave Portnoy -->
+                <div class="player-card bg-gray-700 rounded-xl overflow-hidden">
+                    <div class="relative h-64">
+                        <img src="c.png" alt="Dave Portnoy" class="w-full h-full object-cover">
+                        <div class="absolute top-0 left-0 w-12 h-12 bg-purple-600 flex items-center justify-center text-2xl font-bold">5</div>
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent h-1/3"></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-1">Dave Portnoy</h3>
+                        <p class="text-purple-400 mb-3">Small Forward</p>
+                        <div class="flex items-center text-sm text-gray-300 mb-4">
+                            <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
+                            </svg>
+                            @stoolpresidente
+                        </div>
+                        <p class="text-gray-300 mb-4">Promoted "jailstool" memecoin that rug pulled, using his large following to influence trades, highlighting influencer power in the space.</p>
+                        <div class="grid grid-cols-2 gap-2 mb-4">
+                            <div class="bg-gray-600 rounded p-2 text-center">
+                                <div class="text-xs text-gray-300">FOLLOWING</div>
+                                <div class="text-xl font-bold">91</div>
+                            </div>
+                            <div class="bg-gray-600 rounded p-2 text-center">
+                                <div class="text-xs text-gray-300">IMPACT</div>
+                                <div class="text-xl font-bold">89</div>
+                            </div>
+                        </div>
+                        <a href="https://x.com/stoolpresidente" class="block text-center solana-gradient py-2 rounded font-medium hover:opacity-90 transition">View Profile</a>
+                    </div>
+                </div>
+
+                <!-- Player Card 6 - Hailey Welch -->
+                <div class="player-card bg-gray-700 rounded-xl overflow-hidden">
+                    <div class="relative h-64">
+                        <img src="i.png" alt="Hailey Welch" class="w-full h-full object-cover">
+                        <div class="absolute top-0 left-0 w-12 h-12 bg-purple-600 flex items-center justify-center text-2xl font-bold">6</div>
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent h-1/3"></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-1">Hailey Welch</h3>
+                        <p class="text-purple-400 mb-3">Shooting Guard</p>
+                        <div class="flex items-center text-sm text-gray-300 mb-4">
+                            <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
+                            </svg>
+                            @HawkTuahGirl
+                        </div>
+                        <p class="text-gray-300 mb-4">Known as the "Hawk Tuah" girl, leveraged viral fame to launch a memecoin that later rug pulled, showing the intersection of internet fame and crypto.</p>
+                        <div class="grid grid-cols-2 gap-2 mb-4">
+                            <div class="bg-gray-600 rounded p-2 text-center">
+                                <div class="text-xs text-gray-300">VIRALITY</div>
+                                <div class="text-xl font-bold">95</div>
+                            </div>
+                            <div class="bg-gray-600 rounded p-2 text-center">
+                                <div class="text-xs text-gray-300">MEME POWER</div>
+                                <div class="text-xl font-bold">93</div>
+                            </div>
+                        </div>
+                        <a href="https://x.com/haileywelchx" class="block text-center solana-gradient py-2 rounded font-medium hover:opacity-90 transition">View Profile</a>
+                    </div>
+                </div>
+
+                <!-- Player Card 7 - Anatoly Yakovenko -->
+                <div class="player-card bg-gray-700 rounded-xl overflow-hidden">
+                    <div class="relative h-64">
+                        <img src="f.png" alt="Anatoly Yakovenko" class="w-full h-full object-cover">
+                        <div class="absolute top-0 left-0 w-12 h-12 bg-purple-600 flex items-center justify-center text-2xl font-bold">7</div>
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent h-1/3"></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-1">Anatoly Yakovenko</h3>
+                        <p class="text-purple-400 mb-3">Coach / General Manager</p>
+                        <div class="flex items-center text-sm text-gray-300 mb-4">
+                            <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
+                            </svg>
+                            @aeyakovenko
+                        </div>
+                        <p class="text-gray-300 mb-4">Co-founder of Solana and creator of Proof of History. The visionary who built the foundation that enables the entire memecoin ecosystem.</p>
+                        <div class="grid grid-cols-2 gap-2 mb-4">
+                            <div class="bg-gray-600 rounded p-2 text-center">
+                                <div class="text-xs text-gray-300">TECHNICAL</div>
+                                <div class="text-xl font-bold">98</div>
+                            </div>
+                            <div class="bg-gray-600 rounded p-2 text-center">
+                                <div class="text-xs text-gray-300">LEADERSHIP</div>
+                                <div class="text-xl font-bold">95</div>
+                            </div>
+                        </div>
+                        <a href="https://x.com/aeyakovenko" class="block text-center solana-gradient py-2 rounded font-medium hover:opacity-90 transition">View Profile</a>
+                    </div>
+                </div>
+
+                <!-- Player Card 8 - Raj Gokal -->
+                <div class="player-card bg-gray-700 rounded-xl overflow-hidden">
+                    <div class="relative h-64">
+                        <img src="g.png" alt="Raj Gokal" class="w-full h-full object-cover">
+                        <div class="absolute top-0 left-0 w-12 h-12 bg-purple-600 flex items-center justify-center text-2xl font-bold">8</div>
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent h-1/3"></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-1">Raj Gokal</h3>
+                        <p class="text-purple-400 mb-3">Assistant Coach</p>
+                        <div class="flex items-center text-sm text-gray-300 mb-4">
+                            <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
+                            </svg>
+                            @rajgokal
+                        </div>
+                        <p class="text-gray-300 mb-4">Co-founder and COO of Solana. Helps maintain the ecosystem that allows memecoins to flourish with minimal gas fees and high transaction speeds.</p>
+                        <div class="grid grid-cols-2 gap-2 mb-4">
+                            <div class="bg-gray-600 rounded p-2 text-center">
+                                <div class="text-xs text-gray-300">BUSINESS</div>
+                                <div class="text-xl font-bold">95</div>
+                            </div>
+                            <div class="bg-gray-600 rounded p-2 text-center">
+                                <div class="text-xs text-gray-300">ECOSYSTEM</div>
+                                <div class="text-xl font-bold">94</div>
+                            </div>
+                        </div>
+                        <a href="https://x.com/rajgokal" class="block text-center solana-gradient py-2 rounded font-medium hover:opacity-90 transition">View Profile</a>
+                    </div>
+                </div>
+
+                <!-- Player Card 9 - Elon Musk -->
+                <div class="player-card bg-gray-700 rounded-xl overflow-hidden">
+                    <div class="relative h-64">
+                        <img src="a.png" alt="Elon Musk" class="w-full h-full object-cover">
+                        <div class="absolute top-0 left-0 w-12 h-12 bg-purple-600 flex items-center justify-center text-2xl font-bold">9</div>
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent h-1/3"></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-1">Elon Musk</h3>
+                        <p class="text-purple-400 mb-3">Sixth Man</p>
+                        <div class="flex items-center text-sm text-gray-300 mb-4">
+                            <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
+                            </svg>
+                            @elonmusk
+                        </div>
+                        <p class="text-gray-300 mb-4">Significant figure in crypto whose tweets and actions cause market-wide fluctuations. His influence extends to the Solana ecosystem even when indirect.</p>
+                        <div class="grid grid-cols-2 gap-2 mb-4">
+                            <div class="bg-gray-600 rounded p-2 text-center">
+                                <div class="text-xs text-gray-300">MARKET MOVE</div>
+                                <div class="text-xl font-bold">99</div>
+                            </div>
+                            <div class="bg-gray-600 rounded p-2 text-center">
+                                <div class="text-xs text-gray-300">INFLUENCE</div>
+                                <div class="text-xl font-bold">100</div>
+                            </div>
+                        </div>
+                        <a href="https://x.com/elonmusk" class="block text-center solana-gradient py-2 rounded font-medium hover:opacity-90 transition">View Profile</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-16">
+                <a href="https://pump.fun/coin/ca" class="inline-block border-2 border-purple-500 text-purple-500 px-8 py-3 rounded-lg font-semibold hover:bg-purple-500 hover:text-white transition">View Full Roster</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Stats Section -->
+    <section id="stats" class="py-20 bg-gray-900">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4">Solana Dream Team Stats</h2>
+                <p class="text-xl text-gray-300 max-w-2xl mx-auto">The collective impact of our dream team on the Solana memecoin landscape</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-gray-800 p-6 rounded-xl">
+                    <div class="text-purple-400 text-lg mb-2">Combined Followers</div>
+                    <div class="text-4xl font-bold mb-2">500M+</div>
+                    <div class="text-gray-400">Social media influence</div>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-xl">
+                    <div class="text-purple-400 text-lg mb-2">Market Cap Influenced</div>
+                    <div class="text-4xl font-bold mb-2">$15B+</div>
+                    <div class="text-gray-400">Total memecoin value</div>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-xl">
+                    <div class="text-purple-400 text-lg mb-2">Memecoins Created</div>
+                    <div class="text-4xl font-bold mb-2">25+</div>
+                    <div class="text-gray-400">High-profile launches</div>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-xl">
+                    <div class="text-purple-400 text-lg mb-2">Media Mentions</div>
+                    <div class="text-4xl font-bold mb-2">10K+</div>
+                    <div class="text-gray-400">News articles & features</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-800">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="text-4xl font-bold mb-8">About This Project</h2>
+                <p class="text-xl mb-8">
+                    The Solana Dream Team is a tribute to the diverse figures who have significantly impacted 
+                    the Solana memecoin ecosystem, for better or worse.
+                </p>
+                <p class="text-xl mb-8">
+                    From mainstream celebrities to tech visionaries and viral internet personalities, 
+                    these individuals have shaped the conversation, market dynamics, and public perception of Solana.
+                </p>
+                <div class="solana-gradient p-6 rounded-xl">
+                    <p class="text-white text-lg">
+                        "In the world of memecoins, everyone from world leaders to internet celebrities can become
+                        influential players overnight. This is the democratization of finance, for better or worse."
+                    </p>
+                    <p class="mt-2 font-semibold">- Memecoin Philosopher</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-12">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <!-- Left side - Logo and text -->
+                <div class="mb-8 md:mb-0">
+                    <div class="flex items-center">
+                        <!-- Replace SVG with Image -->
+                        <img src="Solana_logo.png" alt="Solana Logo" class="h-8 mr-2">
+                        <span class="text-2xl font-bold solana-text">Solana Dream Team</span>
+                    </div>
+                    <p class="text-gray-400 mt-2">The Memecoin All-Stars</p>
+                </div>
+                
+                <!-- Right side - Social icons -->
+                <div class="flex space-x-6">
+                    <!-- Twitter (X) Icon -->
+                    <a href="https://x.com/SolanaDreamTeam" class="text-gray-400 hover:text-white transition">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                        </svg>
+                    </a>
+                    
+                    <!-- Pumpfun Custom Icon -->
+<!-- Pumpfun Logo -->
+                    <a href="https://pump.fun/coin/ca" class="text-gray-400 hover:text-white transition">
+                        <img src="pump.png" alt="Pumpfun" class="w-6 h-6">
+                    </a>
+                    
+                    <!-- Telegram Icon -->
+                    <a href="https://t.me/SolanaDreamTeam" class="text-gray-400 hover:text-white transition">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.96 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 Solana Dream Team. All rights reserved.</p>
+                <p class="mt-2 text-sm">Memecoin investments are highly risky and speculative. DYOR.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Simple scroll animation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
